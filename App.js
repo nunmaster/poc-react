@@ -9,6 +9,7 @@ import { Container, Content, Text, StyleProvider, Root } from "native-base";
 import Home from "~/containers/Home";
 import Detail from "~/containers/Detail";
 import Button from "~/containers/Button";
+import Image from "~/containers/Image";
 
 import getTheme from "./native-base-theme/components";
 import material from "./native-base-theme/variables/material";
@@ -21,7 +22,10 @@ const RootNavigator = StackNavigator({
     screen: Detail
   },
   button: {
-    screen: Button
+    screen: Button,
+  },
+  image: {
+    screen: Image,
   }
 });
 

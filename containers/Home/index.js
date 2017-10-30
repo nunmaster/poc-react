@@ -25,7 +25,7 @@ export default class Home extends Component {
         <FlatList
           data={menuData}
           renderItem={({ item }) => (
-            <ListItem onPress={() => this.goTo(item)} style={{}}>
+            <ListItem onPress={() => this.goTo(item)} style={{marginLeft:0,paddingLeft:10}}>
               <Text>{item.key}</Text>
             </ListItem>
           )}
