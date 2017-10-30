@@ -16,35 +16,20 @@ export default class extends Component {
     return (
       <Content>
         <Button iconLeft dark onPress={()=>Toast.show({
-              text: 'Wrong password!',
+              text: 'Clicked',
               position: 'bottom',
-              buttonText: 'Okay'
-            })}>
+              duration: 1000       
+          })}>
           <Icon name="home" />
           <Text> Primary </Text>
         </Button>
-
-
-        <Modal
-          animationType="slide"
-          transparent={false}
-          visible={this.state.modalVisible}
-          onRequestClose={() => {alert("Modal has been closed.")}}
-          >
-         <View style={{marginTop: 22}}>
-          <View>
-            <Text>Hello World!</Text>
-
-            <TouchableHighlight onPress={() => {
-              this.setModalVisible(!this.state.modalVisible)
-            }}>
-              <Text>Hide Modal</Text>
-            </TouchableHighlight>
-
-          </View>
-         </View>
-        </Modal>
-
+        <Button iconCenter rounded onPress={()=>Toast.show({
+              text: 'Clicked',
+              position: 'bottom',
+              duration: 1000       
+          })}>
+          <Icon name="favorite" />
+        </Button>
       </Content>
     );
   }
