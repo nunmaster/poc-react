@@ -1,0 +1,1 @@
+export const ascendImage = require('./ascend.png');
