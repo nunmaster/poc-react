@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-export default class Detail extends Component {
+export default class Button extends Component {
   render() {
     return (
        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Detail</Text>
-    <Text>Detail</Text>
+    <Text>Button</Text>
+    <Text>Button</Text>
   </View>
     );
   }

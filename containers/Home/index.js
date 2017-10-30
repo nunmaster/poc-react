@@ -2,38 +2,32 @@ import React, { Component } from "react";
 
 import { View, Text, Button, FlatList } from "react-native";
 
+import { ListItem } from "native-base";
+
 export default class Home extends Component {
 
 	static navigationOptions = {
 		title: "Home"
 	};
 
-	gotoDetail=()=>{
+	goTo(item){
 		const { navigation } = this.props;
-		navigation.navigate("detail");
-		console.log(navigation);
-	};
+		navigation.navigate(item.route);
+	}
 
 	render() {
 
-		const data = [{key:'a'},{key: 'b'}];		
+		const menuData = [
+			{key: 'Button', route: 'button'},
+			{key: 'Image', route: 'image'}
+		];		
 		return (
-			<View style={{
-				justifyContent: 'center',
-				alignItems: 'center',
-			}}>
-				<FlatList data={data} renderItem={
+			<View>
+				<FlatList data={menuData} renderItem={
 					({item})=> 
-					<View style={{
-						borderWidth:1,
-						borderColor: 'red',
-						flex: 1,
-					}}><Text>{item.key}</Text></View>
+					<ListItem onPress={()=>this.goTo(item)} style={{
+					}}><Text>{item.key}</Text></ListItem>
 				} />
-				<Button
-					onPress={this.gotoDetail}
-					title="Go to details"
-				/>
 			</View>
 		);
 	}

@@ -6,6 +6,7 @@ import Expo from 'expo';
 
 import Home from "~/containers/Home";
 import Detail from "~/containers/Detail";
+import Button from "~/containers/Button";
 
 
 const RootNavigator = StackNavigator({
@@ -15,6 +16,9 @@ const RootNavigator = StackNavigator({
   detail: {
     screen: Detail,
   },
+  button: {
+    screen: Button,
+  }
 });
 
 export default class App extends React.Component {
