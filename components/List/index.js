@@ -1,12 +1,22 @@
 import React, { Component } from "react";
-import { ListView } from "react-native";
+import { View, ListItem, CheckBox, Body, Text } from "native-base";
 
 import styles from "./styles";
 
-export default class ListExample extends Component {
+export default class List extends Component {
   render() {
+    const {data} = this.props;    
     return (
-      <ListView/>
+      <View>
+      {data.map(item=>
+        <ListItem key={item.key}>
+            <CheckBox checked={true} />
+            <Body>
+              <Text>{item.key} sss</Text>
+            </Body>
+          </ListItem>
+      )}
+      </View>
     );
   }
 }
