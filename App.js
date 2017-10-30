@@ -1,44 +1,44 @@
-import React from 'react';
-import { View, Text, Platform } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import React from "react";
+import { Platform } from "react-native";
+import { StackNavigator } from "react-navigation";
 
-import Expo from 'expo';
+import Expo from "expo";
+
+import { Container, Content, Text, StyleProvider, Root } from "native-base";
 
 import Home from "~/containers/Home";
 import Detail from "~/containers/Detail";
 import Button from "~/containers/Button";
 
+import getTheme from "./native-base-theme/components";
+import material from "./native-base-theme/variables/material";
 
 const RootNavigator = StackNavigator({
   home: {
-    screen: Home,
+    screen: Home
   },
   detail: {
-    screen: Detail,
+    screen: Detail
   },
   button: {
-    screen: Button,
+    screen: Button
   }
 });
 
 export default class App extends React.Component {
   state = {
-    isReady: false,
-  }
-
-  shouldComponentUpdate(){
-    return !this.state.isReady;
-  }
+    isReady: false
+  };
 
   async componentWillMount() {
-    if (Platform.OS === 'android') {
+    // if (Platform.OS === "android") {
       await Expo.Font.loadAsync({
-        'Roboto': require('native-base/Fonts/Roboto.ttf'),
-        'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+        Roboto: require("native-base/Fonts/Roboto.ttf"),
+        Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
       });
-    }
+    // }
 
-    this.setState({isReady: true});
+    this.setState({ isReady: true });
   }
 
   render() {
@@ -46,7 +46,12 @@ export default class App extends React.Component {
       return null;
     }
 
-    return <RootNavigator/>;
+    return (
+      <StyleProvider style={getTheme(material)}>   
+        <Root>     
+          <RootNavigator />
+        </Root>
+      </StyleProvider>
+    );
   }
-
 }
