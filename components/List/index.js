@@ -1,21 +1,14 @@
 import React, { Component } from "react";
-import { View, ListItem, CheckBox, Body, Text } from "native-base";
 
-import styles from "./styles";
+import { FlatList, Text } from "react-native";
 
-export default class List extends Component {
+export default class ListExample extends Component {
+
   render() {
-    const {data} = this.props;    
+    const {label, ...props} = this.props;
     return (
       <View>
-      {data.map(item=>
-        <ListItem key={item.key}>
-            <CheckBox checked={true} />
-            <Body>
-              <Text>{item.key} sss</Text>
-            </Body>
-          </ListItem>
-      )}
+        <FlatList {...props} />       
       </View>
     );
   }
