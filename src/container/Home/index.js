@@ -16,6 +16,18 @@ import * as authSelectors from '~/store/selectors/auth';
   }
 )
 class Home extends React.PureComponent {
+
+  componentWillMount(){
+    // navigator.geolocation.getCurrentPosition(
+    //   (position) => {
+    //     console.log('Position', position)              
+    //   },
+    //   (error) => {
+    //   },
+    //   { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 }
+    // )
+  }
+
   render() {
     return (
       <Container>

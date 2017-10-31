@@ -5,6 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
     "ios": "react-native run-ios",
+    "ba": "cd android && ./gradlew assembleRelease",
+    "ia": "adb devices | awk 'NR>1 && $1 ~ /^[^:]+$/ { system(\"adb -s \" $1 \" install -r android/app/build/outputs/apk/app-armeabi-v7a-release.apk\") }'",
     "android": "react-native run-android",
     "keyiOS": "code-push deployment ls reactnativestarterkits-ios -k",
     "keyAndroid": "code-push deployment ls reactnativestarterkits-android -k",
@@ -32,7 +34,7 @@
     "native-base": "^2.3.1",
     "prop-types": "^15.5.10",
     "react": "16.0.0",
-    "react-native": "0.49.5",
+    "react-native": "0.49.0",
     "react-native-fast-image": "^1.0.0",
     "react-native-firebase": "^3.0.5",
     "react-native-image-picker": "^0.26.6",
