@@ -17,8 +17,10 @@ class Root extends React.Component {
 
   componentDidMount() {
     configStore(store => {
-      const firstRoute = authorizedRoute;//store.getState().auth.loggedIn ? authorizedRoute : initRoute;
-      store.dispatch(resetTo(firstRoute));
+      if(!__DEV__){
+        const firstRoute = store.getState().auth.loggedIn ? authorizedRoute : initRoute;
+        store.dispatch(resetTo(firstRoute));
+      }
       this.store = store;
       this.setState({ isLoading: false });
     });

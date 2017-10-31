@@ -30,23 +30,13 @@ class Login extends React.PureComponent {
   render() {
     return (
       <Container>
-        <Content
-          padder
-          style={{
-            backgroundColor: '#000'
-          }}
-        >
-          <View
-            style={{
-              backgroundColor: color('#fff')
-                .darken(0.2)
-                .hex(),
-              top: material.deviceHeight * 0.4,
-              borderRadius: 10,
-              padding: 5
-            }}
-          >
-            <Form>
+          
+            <Form style={{
+            alignSelf: 'center',
+            justifyContent: 'center',
+            width: '80%',
+            height: '100%',
+          }}>
               <InputGroup>
                 <Label>Username</Label>
                 <Input placeholder="Enter your username" />
@@ -62,8 +52,8 @@ class Login extends React.PureComponent {
                 <Text>Login</Text>
               </Button>
             </Form>
-          </View>
-        </Content>
+          
+        
       </Container>
     );
   }

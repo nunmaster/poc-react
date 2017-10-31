@@ -64,7 +64,7 @@ export default {
   firebase: {
     title: 'Firebase',
     Page: Firebase,
-    headerType: 'none',
+    headerType: 'back',
     footerType: 'none'
   },
   notFound: {
