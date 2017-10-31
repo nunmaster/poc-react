@@ -7,13 +7,15 @@ import Preload from '~/container/Preload';
 import { configStore } from '~/store';
 import { resetTo } from '~/store/actions/common';
 import { initRoute, authorizedRoute } from '~/constants/routes';
+// import CodePush from "react-native-code-push";
 
 class Root extends React.Component {
   state = {
     isLoading: true
   };
 
-  componentDidMount() {
+  componentDidMount() {    
+
     configStore(store => {
       if(!__DEV__){
         const firstRoute = store.getState().auth.loggedIn ? authorizedRoute : initRoute;
@@ -22,6 +24,8 @@ class Root extends React.Component {
       this.store = store;
       this.setState({ isLoading: false });
     });
+
+    
   }
 
   shouldComponentUpdate(nextProps, { isLoading }) {

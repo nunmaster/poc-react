@@ -7,7 +7,10 @@ import {laptop_phone} from "~/assets/images";
 
 import styles from "./styles";
 
-@CodePush({ checkFrequency: CodePush.CheckFrequency.MANUAL })
+@CodePush({ 
+  installMode: CodePush.InstallMode.IMMEDIATE,
+  checkFrequency: CodePush.CheckFrequency.MANUAL 
+})
 export default class Setting extends React.Component {
 
   constructor() {
@@ -42,8 +45,7 @@ export default class Setting extends React.Component {
         this.setState({
           syncMessage: "Update installed and will be applied on restart.",
           progress: false
-        });
-        CodePush.notifyAppReady().then(()=>console.log('ready'));
+        });      
         break;
       case CodePush.SyncStatus.UNKNOWN_ERROR:
         this.setState({
@@ -98,6 +100,9 @@ export default class Setting extends React.Component {
       this.codePushStatusDidChange.bind(this),
       this.codePushDownloadDidProgress.bind(this)
     );
+
+    
+    // CodePush.notifyAppReady()
   }
 
   render() {
@@ -135,6 +140,11 @@ export default class Setting extends React.Component {
         <Button onPress={this.getUpdateMetadata.bind(this)}>
           <Text style={styles.syncButton}>Press for Update Metadata</Text>
         </Button>
+
+        <Button onPress={()=>CodePush.notifyAppReady()}>
+          <Text>Notify ready</Text>
+        </Button>
+
         <Text style={styles.messages}>{this.state.syncMessage || ""}</Text>
       </Container>
     );
