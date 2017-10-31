@@ -10,13 +10,13 @@ import Firebase from './container/Firebase';
 
 export default {
   home: {
-    title: 'Home',
+    title: 'Home 124',
     Page: Home,
     headerType: 'home',
     cache: true
   },
   gallery: {
-    title: 'Gallery',
+    title: 'Gallery 124',
     Page: Gallery,
     headerType: 'back',
     footerType: 'none',

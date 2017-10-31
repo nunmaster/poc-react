@@ -35,7 +35,7 @@ class Home extends React.PureComponent {
           <MapView
             style={{
               width: null,
-              height: 300,
+              height: 500,
               flex: 1
             }}
             provider={PROVIDER_GOOGLE}

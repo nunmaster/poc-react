@@ -103,7 +103,7 @@ export default class extends Component {
     return this.renderHeader(left, center, right);
   }
 
-  renderHeaderHome() {
+  renderHeaderHome(title) {
     const numberNotification =
       this.props.unReadNotification !== 0 ? (
         <View style={styles.badgeContainer}>
@@ -120,7 +120,7 @@ export default class extends Component {
     );
     const center = (
       <Title white style={{ alignSelf: 'center' }}>
-        Home
+        {title}
       </Title>
     );
     const right = (
@@ -164,7 +164,7 @@ export default class extends Component {
       case 'back':
         return this.renderHeaderBack(title);
       case 'home':
-        return this.renderHeaderHome();
+        return this.renderHeaderHome(title);
       case 'searchBack':
         return this.renderHeaderSearch('ios-arrow-back');
       default:
