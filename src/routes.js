@@ -15,6 +15,8 @@ import Shadow from './container/Shadow';
 import Switch from './container/Switch';
 import Copy from './container/Copy';
 import Loading from './container/Loading';
+import Share from './container/Share';
+import WebView from './container/WebView';
 
 export default {
   home: {
@@ -121,6 +123,18 @@ export default {
   loading: {
     title: 'Loading',
     Page: Loading,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  share: {
+    title: 'Share',
+    Page: Share,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  webview: {
+    title: 'WebView',
+    Page: WebView,
     headerType: 'back',
     footerType: 'none'
   },

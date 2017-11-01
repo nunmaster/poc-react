@@ -17,7 +17,7 @@ import * as authSelectors from '~/store/selectors/auth';
 )
 class Home extends React.PureComponent {
 
-  componentWillMount(){
+  componentWillMount() {
     // navigator.geolocation.getCurrentPosition(
     //   (position) => {
     //     console.log('Position', position)              

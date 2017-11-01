@@ -64,6 +64,17 @@ export default {
       name: 'Loading',
       route: 'loading',
       icon: 'ios-camera'
-    }
+    },
+    {
+      name: 'Share',
+      route: 'share',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'WebView',
+      route: 'webview',
+      icon: 'ios-camera'
+    },
+
   ]
 };

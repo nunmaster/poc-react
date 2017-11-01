@@ -3,6 +3,7 @@ package com.nun.poc.rn;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import cl.json.RNSharePackage;
 import com.react.rnspinkit.RNSpinkitPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import com.lwansbrough.RCTCamera.RCTCameraPackage;
@@ -42,6 +43,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNSharePackage(),
             new RNSpinkitPackage(),
             new ReactVideoPackage(),
             new RCTCameraPackage(),

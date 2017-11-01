@@ -159,6 +159,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-share')
     compile project(':react-native-spinkit')
     compile project(':react-native-video')
     compile project(':react-native-camera')
