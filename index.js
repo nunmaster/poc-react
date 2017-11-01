@@ -2,11 +2,11 @@ import React from 'react';
 import { AppRegistry } from 'react-native';
 import { Provider } from 'react-redux';
 
-import App from '~/App';
-import Preload from '~/container/Preload';
-import { configStore } from '~/store';
-import { resetTo } from '~/store/actions/common';
-import { initRoute, authorizedRoute } from '~/constants/routes';
+import App from './src/App';
+import Preload from './src/container/Preload';
+import { configStore } from './src/store';
+import { resetTo } from './src/store/actions/common';
+import { initRoute, authorizedRoute } from './src/constants/routes';
 // import CodePush from "react-native-code-push";
 
 class Root extends React.Component {
