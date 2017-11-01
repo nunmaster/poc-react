@@ -75,10 +75,10 @@ PODS:
   - Protobuf (3.4.0)
   - React (0.49.0):
     - React/Core (= 0.49.0)
-  - react-native-google-maps (0.16.2):
+  - react-native-google-maps (0.17.1):
     - GoogleMaps (= 2.1.1)
     - React
-  - react-native-maps (0.16.2):
+  - react-native-maps (0.17.1):
     - React
   - React/BatchedBridge (0.49.0):
     - React/Core
@@ -152,7 +152,7 @@ EXTERNAL SOURCES:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
-  CodePush: ffe876b57db57e0295653d69aa1653b0278b43ad
+  CodePush: ddb921f3ffba78095bb421b6b710b72f07f7378a
   Firebase: 3e92884a63e8f76d107c43a67d2ab9071e1eda10
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseAuth: e0087d479709b20b9613b804704a928d6eafb052
@@ -167,8 +167,8 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
   React: 361d080313d690200036fed244f97f8264374d58
-  react-native-google-maps: e499a22f9a9c0c91a0eb1400d6ee48a7ac815f33
-  react-native-maps: da06bba7e02ade95c5604d97ae0cc4775900c65a
+  react-native-google-maps: 7aefab8f46ade38fa0931551501f839bbc9fc84f
+  react-native-maps: f3624337f9f5d36b117fa0acdaa32406a6687ee0
   yoga: e13aa29fefdcba797592f623d69d0cbe97eeb756
 
 PODFILE CHECKSUM: c3978ed8a97828b5ba41cf449827385d4be19076
