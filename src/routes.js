@@ -7,6 +7,7 @@ import UserProfile from './container/UserProfile';
 import Whatsapp from './container/Whatsapp';
 import Shop from './container/Shop';
 import Firebase from './container/Firebase';
+import Karaoke from './container/Karaoke';
 
 export default {
   home: {
@@ -64,6 +65,12 @@ export default {
   firebase: {
     title: 'Firebase',
     Page: Firebase,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  karaoke: {
+    title: 'Karaoke',
+    Page: Karaoke,
     headerType: 'back',
     footerType: 'none'
   },
