@@ -19,7 +19,8 @@ target 'PocReact' do
     'RCTText',
     'RCTVibration',
     'RCTWebSocket',
-    'BatchedBridge'
+    'BatchedBridge',
+    'ART',
     ]    
     
     pod 'GoogleMaps'  # <~~ remove this line if you do not want to support GoogleMaps on iOS

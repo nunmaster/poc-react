@@ -11,6 +11,14 @@ import Firebase from './container/Firebase';
 import Karaoke from './container/Karaoke';
 import Camera from './container/Camera';
 import Contact from './container/Contact';
+import ScrollBar from './container/ScrollBar';
+import Shadow from './container/Shadow';
+import Switch from './container/Switch';
+import Copy from './container/Copy';
+import Loading from './container/Loading';
+import Datepicker from './container/Datepicker';
+import Dropdown from './container/Dropdown';
+
 export default {
   home: {
     title: 'Home',
@@ -88,6 +96,50 @@ export default {
     Page: Camera,
     headerType: 'back',
     footerType: 'none'
+  },
+  scrollbar: {
+    title: 'ScrollBar',
+    Page: ScrollBar,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  shadow: {
+    title: 'Shadow',
+    Page: Shadow,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  switch: {
+    title: 'Switch',
+    Page: Switch,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  copy: {
+    title: 'Copy',
+    Page: Copy,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  loading: {
+    title: 'Loading',
+    Page: Loading,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  datepicker: {
+    title: 'Datepicker',
+    Page: Datepicker,
+    headerType: 'back',
+    footerType: 'none',
+    cache: true
+  },
+  dropdown: {
+    title: 'Dropdown',
+    Page: Dropdown,
+    headerType: 'back',
+    footerType: 'none',
+    cache: true
   },
   notFound: {
     title: 'Login',

@@ -44,6 +44,41 @@ export default {
       name: 'Contact',
       route: 'contact',
       icon: 'ios-contact'
+    },
+    {
+      name: 'ScrollBar',
+      route: 'scrollbar',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Shadow',
+      route: 'shadow',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Switch',
+      route: 'switch',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Copy',
+      route: 'copy',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Loading',
+      route: 'loading',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Datepicker',
+      route: 'datepicker',
+      icon: 'ios-timer'
+    },
+    {
+      name: 'Dropdown',
+      route: 'dropdown',
+      icon: 'ios-arrow-dropdown'
     }
   ]
 };

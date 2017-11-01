@@ -160,6 +160,7 @@ android {
 
 dependencies {
     compile project(':react-native-contacts-wrapper')
+    compile project(':react-native-spinkit')
     compile project(':react-native-video')
     compile project(':react-native-camera')
     compile project(':react-native-code-push')
