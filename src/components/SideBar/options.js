@@ -41,6 +41,11 @@ export default {
       icon: 'ios-camera'
     },
     {
+      name: 'Contact',
+      route: 'contact',
+      icon: 'ios-contact'
+    },
+    {
       name: 'ScrollBar',
       route: 'scrollbar',
       icon: 'ios-camera'
@@ -71,10 +76,19 @@ export default {
       icon: 'ios-camera'
     },
     {
+      name: 'Datepicker',
+      route: 'datepicker',
+      icon: 'ios-timer'
+    },
+    {
+      name: 'Dropdown',
+      route: 'dropdown',
+      icon: 'ios-arrow-dropdown'
+    },
+    {
       name: 'WebView',
       route: 'webview',
-      icon: 'ios-camera'
-    },
-
+      icon: 'ios-link'
+    }
   ]
 };

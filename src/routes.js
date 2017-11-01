@@ -10,12 +10,18 @@ import Shop from './container/Shop';
 import Firebase from './container/Firebase';
 import Karaoke from './container/Karaoke';
 import Camera from './container/Camera';
+import Contact from './container/Contact';
 import ScrollBar from './container/ScrollBar';
 import Shadow from './container/Shadow';
 import Switch from './container/Switch';
 import Copy from './container/Copy';
 import Loading from './container/Loading';
+<<<<<<< HEAD
 import Share from './container/Share';
+=======
+import Datepicker from './container/Datepicker';
+import Dropdown from './container/Dropdown';
+>>>>>>> 0bf1623f489a8e4f661911b23c4db412a953f905
 import WebView from './container/WebView';
 
 export default {
@@ -132,16 +138,34 @@ export default {
     headerType: 'back',
     footerType: 'none'
   },
+  datepicker: {
+    title: 'Datepicker',
+    Page: Datepicker,
+    headerType: 'back',
+    footerType: 'none',
+  },
+  dropdown: {
+    title: 'Dropdown',
+    Page: Dropdown,
+    headerType: 'back',
+    footerType: 'none',
+  },
   webview: {
     title: 'WebView',
     Page: WebView,
     headerType: 'back',
-    footerType: 'none'
+    footerType: 'none',
   },
   notFound: {
     title: 'Login',
     Page: Login,
     headerType: 'none',
+    footerType: 'none'
+  },
+  contact: {
+    title: 'Contact',
+    Page: Contact,
+    headerType: 'back',
     footerType: 'none'
   }
 };
