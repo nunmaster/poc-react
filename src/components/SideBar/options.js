@@ -39,6 +39,11 @@ export default {
       name: 'Camera',
       route: 'camera',
       icon: 'ios-camera'
+    },
+    {
+      name: 'Contact',
+      route: 'contact',
+      icon: 'ios-contact'
     }
   ]
 };

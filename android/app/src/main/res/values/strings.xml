@@ -1,4 +1,5 @@
 <resources>
+
     <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">7kr5OE4WW6GK8rY-zWX4RjGTJG_od32b99bf-2c2a-48b9-a91b-0815995b50cd</string>
     <string name="app_name">Poc React</string>
 </resources>

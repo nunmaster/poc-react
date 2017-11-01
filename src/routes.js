@@ -10,6 +10,7 @@ import Shop from './container/Shop';
 import Firebase from './container/Firebase';
 import Karaoke from './container/Karaoke';
 import Camera from './container/Camera';
+import Contact from './container/Contact';
 export default {
   home: {
     title: 'Home',
@@ -92,6 +93,12 @@ export default {
     title: 'Login',
     Page: Login,
     headerType: 'none',
+    footerType: 'none'
+  },
+  contact: {
+    title: 'Contact',
+    Page: Contact,
+    headerType: 'back',
     footerType: 'none'
   }
 };

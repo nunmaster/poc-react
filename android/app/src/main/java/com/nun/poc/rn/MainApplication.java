@@ -15,6 +15,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.lynxit.contactswrapper.ContactsWrapperPackage;
 
 import io.invertase.firebase.auth.RNFirebaseAuthPackage; // Firebase Auth
 import io.invertase.firebase.database.RNFirebaseDatabasePackage; // Firebase Realtime Database
@@ -52,7 +53,8 @@ public class MainApplication extends Application implements ReactApplication {
           new VectorIconsPackage(),
           new MapsPackage(),
           new ImagePickerPackage(),
-          new FastImageViewPackage()
+          new FastImageViewPackage(),
+          new ContactsWrapperPackage()
       );
     }
 
