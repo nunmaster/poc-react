@@ -39,6 +39,31 @@ export default {
       name: 'Camera',
       route: 'camera',
       icon: 'ios-camera'
+    },
+    {
+      name: 'ScrollBar',
+      route: 'scrollbar',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Shadow',
+      route: 'shadow',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Switch',
+      route: 'switch',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Copy',
+      route: 'copy',
+      icon: 'ios-camera'
+    },
+    {
+      name: 'Loading',
+      route: 'loading',
+      icon: 'ios-camera'
     }
   ]
 };

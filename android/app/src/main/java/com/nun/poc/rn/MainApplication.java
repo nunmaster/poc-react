@@ -3,6 +3,7 @@ package com.nun.poc.rn;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.react.rnspinkit.RNSpinkitPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import com.microsoft.codepush.react.CodePush;
@@ -41,6 +42,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNSpinkitPackage(),
             new ReactVideoPackage(),
             new RCTCameraPackage(),
             new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey), getApplicationContext(), BuildConfig.DEBUG),
