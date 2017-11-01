@@ -9,7 +9,7 @@ import Whatsapp from './container/Whatsapp';
 import Shop from './container/Shop';
 import Firebase from './container/Firebase';
 import Karaoke from './container/Karaoke';
-
+import Camera from './container/Camera';
 export default {
   home: {
     title: 'Home',
@@ -79,6 +79,12 @@ export default {
   karaoke: {
     title: 'Karaoke',
     Page: Karaoke,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  camera: {
+    title: 'Camera',
+    Page: Camera,
     headerType: 'back',
     footerType: 'none'
   },
