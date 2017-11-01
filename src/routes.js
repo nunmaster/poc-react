@@ -124,9 +124,17 @@ export default {
     Page: Loading,
     headerType: 'back',
     footerType: 'none'
+  },
   datepicker: {
     title: 'Datepicker',
     Page: Datepicker,
+    headerType: 'back',
+    footerType: 'none',
+    cache: true
+  },
+  dropdown: {
+    title: 'Dropdown',
+    Page: Dropdown,
     headerType: 'back',
     footerType: 'none',
     cache: true

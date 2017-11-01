@@ -64,9 +64,16 @@ export default {
       name: 'Loading',
       route: 'loading',
       icon: 'ios-camera'
+    },
+    {
       name: 'Datepicker',
       route: 'datepicker',
       icon: 'ios-timer'
+    },
+    {
+      name: 'Dropdown',
+      route: 'dropdown',
+      icon: 'ios-arrow-dropdown'
     }
   ]
 };
