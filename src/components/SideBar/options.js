@@ -79,6 +79,11 @@ export default {
       name: 'Dropdown',
       route: 'dropdown',
       icon: 'ios-arrow-dropdown'
+    },
+    {
+      name: 'WebView',
+      route: 'webview',
+      icon: 'ios-link'
     }
   ]
 };

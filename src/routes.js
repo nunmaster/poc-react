@@ -18,6 +18,7 @@ import Copy from './container/Copy';
 import Loading from './container/Loading';
 import Datepicker from './container/Datepicker';
 import Dropdown from './container/Dropdown';
+import WebView from './container/WebView';
 
 export default {
   home: {
@@ -137,6 +138,13 @@ export default {
   dropdown: {
     title: 'Dropdown',
     Page: Dropdown,
+    headerType: 'back',
+    footerType: 'none',
+    cache: true
+  },
+  webview: {
+    title: 'WebView',
+    Page: WebView,
     headerType: 'back',
     footerType: 'none',
     cache: true
