@@ -16,6 +16,7 @@ import Switch from './container/Switch';
 import Copy from './container/Copy';
 import Loading from './container/Loading';
 import Datepicker from './container/Datepicker';
+import Dropdown from './container/Dropdown';
 
 export default {
   home: {
