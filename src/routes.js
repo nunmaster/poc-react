@@ -15,6 +15,7 @@ import Shadow from './container/Shadow';
 import Switch from './container/Switch';
 import Copy from './container/Copy';
 import Loading from './container/Loading';
+import Datepicker from './container/Datepicker';
 
 export default {
   home: {
@@ -123,6 +124,12 @@ export default {
     Page: Loading,
     headerType: 'back',
     footerType: 'none'
+  datepicker: {
+    title: 'Datepicker',
+    Page: Datepicker,
+    headerType: 'back',
+    footerType: 'none',
+    cache: true
   },
   notFound: {
     title: 'Login',
