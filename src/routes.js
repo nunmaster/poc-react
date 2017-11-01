@@ -2,13 +2,14 @@ import Login from './container/Login';
 import Register from './container/Register';
 import Home from './container/Home';
 import Gallery from './container/Gallery';
+import Image from './container/Image';
 import Setting from './container/Setting';
 import UserProfile from './container/UserProfile';
 import Whatsapp from './container/Whatsapp';
 import Shop from './container/Shop';
 import Firebase from './container/Firebase';
 import Karaoke from './container/Karaoke';
-
+import Camera from './container/Camera';
 export default {
   home: {
     title: 'Home',
@@ -19,6 +20,13 @@ export default {
   gallery: {
     title: 'Gallery',
     Page: Gallery,
+    headerType: 'back',
+    footerType: 'none',
+    cache: true
+  },
+  image: {
+    title: 'Image',
+    Page: Image,
     headerType: 'back',
     footerType: 'none',
     cache: true
@@ -71,6 +79,12 @@ export default {
   karaoke: {
     title: 'Karaoke',
     Page: Karaoke,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  camera: {
+    title: 'Camera',
+    Page: Camera,
     headerType: 'back',
     footerType: 'none'
   },

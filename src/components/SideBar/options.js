@@ -16,6 +16,11 @@ export default {
       icon: 'ios-images'
     },
     {
+      name: 'Image',
+      route: 'image',
+      icon: 'ios-image'
+    },
+    {
       name: 'Whatsapp',
       route: 'whatsapp',
       icon: 'ios-chatbubbles'
@@ -29,6 +34,11 @@ export default {
       name: 'History',
       route: 'fanHistory',
       icon: 'ios-paper'
+    },
+    {
+      name: 'Camera',
+      route: 'camera',
+      icon: 'ios-camera'
     }
   ]
 };

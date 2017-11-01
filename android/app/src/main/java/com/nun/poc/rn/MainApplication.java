@@ -3,6 +3,8 @@ package com.nun.poc.rn;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.brentvatne.react.ReactVideoPackage;
+import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import com.microsoft.codepush.react.CodePush;
 import io.invertase.firebase.RNFirebasePackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -39,6 +41,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactVideoPackage(),
+            new RCTCameraPackage(),
             new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey), getApplicationContext(), BuildConfig.DEBUG),
             new RNFirebasePackage(),
               new RNFirebaseAuthPackage(),
