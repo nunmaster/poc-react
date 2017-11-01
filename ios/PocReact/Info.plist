@@ -24,12 +24,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-  <key>NSAppTransportSecurity</key>
-  <dict>
-    <key>NSAllowsArbitraryLoads</key>
-    <true/>
-  </dict>
-  <key>NSCameraUsageDescription</key>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
 	<string>Poc React need access your camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Poc React need access your location</string>
@@ -51,6 +51,7 @@
 		<string>Zocial.ttf</string>
 		<string>rubicon-icon-font.ttf</string>
 		<string>MaterialCommunityIcons.ttf</string>
+		<string>Feather.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

@@ -34,6 +34,11 @@ export default {
       name: 'History',
       route: 'fanHistory',
       icon: 'ios-paper'
+    },
+    {
+      name: 'Camera',
+      route: 'camera',
+      icon: 'ios-camera'
     }
   ]
 };
