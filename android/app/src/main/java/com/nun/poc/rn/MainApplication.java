@@ -18,6 +18,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.lynxit.contactswrapper.ContactsWrapperPackage;
+import com.kevinejohn.RNMixpanel.*;
 
 import io.invertase.firebase.auth.RNFirebaseAuthPackage; // Firebase Auth
 import io.invertase.firebase.database.RNFirebaseDatabasePackage; // Firebase Realtime Database
@@ -43,6 +44,7 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
+              new RNMixpanel(),
           new MainReactPackage(),
             new RNSharePackage(),
             new RNSpinkitPackage(),

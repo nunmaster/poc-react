@@ -45,6 +45,7 @@
     "react-native-firebase": "^3.0.5",
     "react-native-image-picker": "^0.26.6",
     "react-native-maps": "^0.17.1",
+    "react-native-mixpanel": "0.0.16",
     "react-native-phone-call": "^1.0.4",
     "react-native-progress": "^3.4.0",
     "react-native-share": "^1.0.23",
