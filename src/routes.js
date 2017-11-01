@@ -16,13 +16,11 @@ import Shadow from './container/Shadow';
 import Switch from './container/Switch';
 import Copy from './container/Copy';
 import Loading from './container/Loading';
-<<<<<<< HEAD
 import Share from './container/Share';
-=======
 import Datepicker from './container/Datepicker';
 import Dropdown from './container/Dropdown';
->>>>>>> 0bf1623f489a8e4f661911b23c4db412a953f905
 import WebView from './container/WebView';
+import PhoneMail from './container/PhoneMail';
 
 export default {
   home: {
@@ -165,6 +163,12 @@ export default {
   contact: {
     title: 'Contact',
     Page: Contact,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  phonemail: {
+    title: 'Phone & Mail',
+    Page: PhoneMail,
     headerType: 'back',
     footerType: 'none'
   }
