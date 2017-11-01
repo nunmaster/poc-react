@@ -16,6 +16,11 @@ export default {
       icon: 'ios-images'
     },
     {
+      name: 'Image',
+      route: 'image',
+      icon: 'ios-image'
+    },
+    {
       name: 'Whatsapp',
       route: 'whatsapp',
       icon: 'ios-chatbubbles'

@@ -2,6 +2,7 @@ import Login from './container/Login';
 import Register from './container/Register';
 import Home from './container/Home';
 import Gallery from './container/Gallery';
+import Image from './container/Image';
 import Setting from './container/Setting';
 import UserProfile from './container/UserProfile';
 import Whatsapp from './container/Whatsapp';
@@ -19,6 +20,13 @@ export default {
   gallery: {
     title: 'Gallery',
     Page: Gallery,
+    headerType: 'back',
+    footerType: 'none',
+    cache: true
+  },
+  image: {
+    title: 'Image',
+    Page: Image,
     headerType: 'back',
     footerType: 'none',
     cache: true
