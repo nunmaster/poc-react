@@ -680,6 +680,8 @@
 				5C99CE68F79140FBA8396EAB /* libRNImagePicker.a */,
 				20A8D71D62FA4981A3B2DCA5 /* libAirMaps.a */,
 				08417AEEAAD941EFBC560D8E /* libRNVectorIcons.a */,
+				6AA40A6979F74F4898005A78 /* libRNFirebase.a */,
+				D1CFC8E9BE6B4DBABE7D0FF6 /* libCodePush.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";

@@ -28,6 +28,12 @@ const imagePickerOptions = {
   { ...authActions, ...commonActions }
 )
 export default class extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      avatarSource: null,
+    };
+  }
   onFanProfilePress() {
     const { forwardTo, closeDrawer } = this.props;
     closeDrawer();
@@ -77,9 +83,9 @@ export default class extends PureComponent {
           }
         ]);
 
-        // this.setState({
-        //   avatarSource: source
-        // });
+        this.setState({
+          avatarSource: source
+        });
       }
     });
   }
@@ -91,7 +97,7 @@ export default class extends PureComponent {
         <ListItem onPress={this.onFanProfilePress.bind(this)} style={styles.drawerCover}>
           <TouchableOpacity activeOpacity={0.8} onPress={() => this.changeAvatar()}>
             <Image
-              source={images.avatar}
+              source={this.state.avatarSource ? this.state.avatarSource : images.avatar}
               placeholder={<Icon name="image" style={styles.drawerImage} />}
               style={styles.drawerImage}
             />
