@@ -138,7 +138,12 @@ export default {
     {
       name: 'NativeModule',
       route: 'nativemodule',
-      icon: 'call'
+      icon: 'ios-construct'
+    },
+    {
+      name: 'Keyboard',
+      route: 'keyboard',
+      icon: 'ios-paper'
     }
   ]
 };

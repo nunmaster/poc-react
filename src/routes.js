@@ -30,6 +30,7 @@ import Zoom from './container/Zoom';
 import Carousel from './container/Carousel';
 import Animation from './container/Animation';
 import NativeModule from './container/NativeModule';
+import Keyboard from './container/Keyboard';
 
 export default {
   home: {
@@ -232,6 +233,12 @@ export default {
   nativemodule: {
     title: 'NativeModule',
     Page: NativeModule,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  keyboard: {
+    title: 'Keyboard',
+    Page: Keyboard,
     headerType: 'back',
     footerType: 'none'
   }
