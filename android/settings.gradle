@@ -1,8 +1,13 @@
 rootProject.name = 'PocReact'
+<<<<<<< HEAD
 include ':react-native-svg'
 project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
 include ':react-native-fingerprint-scanner'
 project(':react-native-fingerprint-scanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fingerprint-scanner/android')
+=======
+include ':react-native-android-badge'
+project(':react-native-android-badge').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-badge/android')
+>>>>>>> 9b9eecc5371df32d82e0b8eb5abbb1e7b299c622
 include ':react-native-share'
 project(':react-native-share').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-share/android')
 include ':react-native-spinkit'

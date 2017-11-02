@@ -5,6 +5,7 @@ import android.app.Application;
 import com.facebook.react.ReactApplication;
 import com.horcrux.svg.SvgPackage;
 import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
+import me.jhen.react.BadgePackage;
 import cl.json.RNSharePackage;
 import com.react.rnspinkit.RNSpinkitPackage;
 import com.brentvatne.react.ReactVideoPackage;
@@ -48,8 +49,12 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
               new RNMixpanel(),
           new MainReactPackage(),
+<<<<<<< HEAD
             new SvgPackage(),
             new ReactNativeFingerprintScannerPackage(),
+=======
+            new BadgePackage(),
+>>>>>>> 9b9eecc5371df32d82e0b8eb5abbb1e7b299c622
             new RNSharePackage(),
             new RNSpinkitPackage(),
             new ReactVideoPackage(),
