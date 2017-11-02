@@ -24,9 +24,9 @@ class Root extends React.Component {
     firebase.messaging().getInitialNotification()
       .then((notification) => {
         console.log('Notification which opened the app: ', notification);
-        console.log('Badge: ', notification.badge);
-        const BadgeAndroid = require('react-native-android-badge');
-        BadgeAndroid.setBadge(10);
+        // console.log('Badge: ', notification.badge);
+        // const BadgeAndroid = require('react-native-android-badge');
+        // BadgeAndroid.setBadge(10);
     });
     
     configStore(store => {
