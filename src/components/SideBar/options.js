@@ -16,6 +16,11 @@ export default {
       icon: 'ios-images'
     },
     {
+      name: 'CountDown',
+      route: 'countdown',
+      icon: 'ios-timer'
+    },
+    {
       name: 'Image',
       route: 'image',
       icon: 'ios-image'
