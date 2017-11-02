@@ -31,6 +31,7 @@ import Carousel from './container/Carousel';
 import Animation from './container/Animation';
 import NativeModule from './container/NativeModule';
 import Keyboard from './container/Keyboard';
+import Speaker from './container/Speaker';
 
 export default {
   home: {
@@ -239,6 +240,12 @@ export default {
   keyboard: {
     title: 'Keyboard',
     Page: Keyboard,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  speaker: {
+    title: 'Speaker',
+    Page: Speaker,
     headerType: 'back',
     footerType: 'none'
   }

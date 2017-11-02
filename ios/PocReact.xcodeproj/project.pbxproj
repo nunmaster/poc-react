@@ -80,6 +80,7 @@
 		ED142FAFEA5E4DF4AC535B09 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2509427658DC45AFA721ADEF /* Foundation.ttf */; };
 		EF4B04D01FAB85AF001E0F49 /* OutputVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4B04CF1FAB85AF001E0F49 /* OutputVolume.m */; };
 		F287F5FEBE2D41EB90DB3B84 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE6EF5A01A764823ACD6BE9B /* MaterialCommunityIcons.ttf */; };
+		F8268F68A4284970B6FF0AB4 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF69699FFF54AFE9B1D4188 /* libRNSound.a */; };
 		FA3C8A994A849347479CF52C /* libPods-PocReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25912925FB6A89C774BD569B /* libPods-PocReact.a */; };
 /* End PBXBuildFile section */
 
@@ -504,6 +505,13 @@
 			remoteGlobalIDString = 5EAEEA411F0555B100C6FED8;
 			remoteInfo = "RNMixpanel-tvOS";
 		};
+		EF4B057E1FAB95F2001E0F49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1116342F71F4DECAA08C452 /* RNSound.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 19825A1E1BD4A89800EE0337;
+			remoteInfo = RNSound;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -531,6 +539,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PocReact/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1988763886DE4877B0FEC451 /* libRCTCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTCamera.a; sourceTree = "<group>"; };
+		1FF69699FFF54AFE9B1D4188 /* libRNSound.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSound.a; sourceTree = "<group>"; };
 		20A8D71D62FA4981A3B2DCA5 /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAirMaps.a; sourceTree = "<group>"; };
 		220657DEA82147ACAE0CE319 /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../src/assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
 		24C13C3A1FA820D50035553C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -634,6 +643,7 @@
 		EF4B037C1FAA4D4D001E0F49 /* PocReact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PocReact.entitlements; path = PocReact/PocReact.entitlements; sourceTree = "<group>"; };
 		EF4B04CE1FAB85AF001E0F49 /* OutputVolume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutputVolume.h; sourceTree = "<group>"; };
 		EF4B04CF1FAB85AF001E0F49 /* OutputVolume.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutputVolume.m; sourceTree = "<group>"; };
+		F1116342F71F4DECAA08C452 /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
 		F35BCA6C1FE84751BA28D418 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		F747E8900EB641B99645B4FF /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		F81E6E4F92E142B6AB192CC2 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
@@ -684,6 +694,7 @@
 				1F5AAD607D1240469EB81651 /* libRNSVG.a in Frameworks */,
 				0FF61FEA760249C88D7AE4A1 /* libRNPhotoView.a in Frameworks */,
 				0C552D6F23C4480594A936A4 /* libBVLinearGradient.a in Frameworks */,
+				F8268F68A4284970B6FF0AB4 /* libRNSound.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +953,7 @@
 				81206B182F694E95853886B9 /* libRNSVG.a */,
 				D1E76CFB63B44BC28B7C46CC /* libRNPhotoView.a */,
 				0F4C239FA8D9477FBB946AFA /* libBVLinearGradient.a */,
+				1FF69699FFF54AFE9B1D4188 /* libRNSound.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1074,6 +1086,7 @@
 				4AAC85BEA8ED4FC9AC9F8844 /* RNSVG.xcodeproj */,
 				BE12B806034C4F1A83DE81DB /* RNPhotoView.xcodeproj */,
 				0CF0D947A6FA4448A5BDAB22 /* BVLinearGradient.xcodeproj */,
+				F1116342F71F4DECAA08C452 /* RNSound.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1158,6 +1171,14 @@
 			children = (
 				EF4B02321FAA3091001E0F49 /* libRNMixpanel.a */,
 				EF4B02341FAA3091001E0F49 /* libRNMixpanel-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF4B057B1FAB95F1001E0F49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF4B057F1FAB95F2001E0F49 /* libRNSound.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1427,6 +1448,10 @@
 				{
 					ProductGroup = 297D58E61FA9D2D4008934C4 /* Products */;
 					ProjectRef = D931FFED1A95462DA5AE182E /* RNShare.xcodeproj */;
+				},
+				{
+					ProductGroup = EF4B057B1FAB95F1001E0F49 /* Products */;
+					ProjectRef = F1116342F71F4DECAA08C452 /* RNSound.xcodeproj */;
 				},
 				{
 					ProductGroup = 297D58581FA9CC01008934C4 /* Products */;
@@ -1851,6 +1876,13 @@
 			remoteRef = EF4B02331FAA3091001E0F49 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		EF4B057F1FAB95F2001E0F49 /* libRNSound.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSound.a;
+			remoteRef = EF4B057E1FAB95F2001E0F49 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -2107,12 +2139,14 @@
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-photo-view/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 				);
 				INFOPLIST_FILE = PocReactTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -2163,12 +2197,14 @@
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-photo-view/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 				);
 				INFOPLIST_FILE = PocReactTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -2224,6 +2260,7 @@
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-photo-view/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 				);
 				INFOPLIST_FILE = PocReact/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2269,6 +2306,7 @@
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-photo-view/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 				);
 				INFOPLIST_FILE = PocReact/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2315,11 +2353,13 @@
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-photo-view/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 				);
 				INFOPLIST_FILE = "PocReact-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -2379,11 +2419,13 @@
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-photo-view/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 				);
 				INFOPLIST_FILE = "PocReact-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -2444,6 +2486,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.PocReact-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2468,6 +2511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

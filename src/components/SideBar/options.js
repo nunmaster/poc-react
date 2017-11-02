@@ -144,6 +144,11 @@ export default {
       name: 'Keyboard',
       route: 'keyboard',
       icon: 'ios-paper'
+    },
+    {
+      name: 'Speaker',
+      route: 'speaker',
+      icon: 'ios-chatbubbles'
     }
   ]
 };

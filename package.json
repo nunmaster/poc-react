@@ -1,8 +1,8 @@
 {
   "name": "PocReact",
   "version": "0.0.1",
-  "private": true,  
-  "scripts": {    
+  "private": true,
+  "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
     "ios": "react-native run-ios",
     "ba": "cd android && ./gradlew assembleRelease",
@@ -59,6 +59,7 @@
     "react-native-qrcode-svg": "^5.0.3",
     "react-native-share": "^1.0.23",
     "react-native-snap-carousel": "^3.3.4",
+    "react-native-sound": "^0.10.4",
     "react-native-spinkit": "^1.1.1",
     "react-native-svg": "^5.4.2",
     "react-native-vector-icons": "^4.4.2",
