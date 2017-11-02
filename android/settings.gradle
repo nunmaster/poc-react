@@ -21,5 +21,7 @@ include ':react-native-fast-image'
 project(':react-native-fast-image').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fast-image/android')
 
 include ':app'
+include ':react-native-mixpanel'
+project(':react-native-mixpanel').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-mixpanel/android')
 include ':react-native-contacts-wrapper'
 project(':react-native-contacts-wrapper').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-contacts-wrapper/android/app')

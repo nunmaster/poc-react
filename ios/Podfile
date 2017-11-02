@@ -22,8 +22,8 @@ target 'PocReact' do
     'BatchedBridge',
     'ART',
     ]    
-    
-    pod 'GoogleMaps'  # <~~ remove this line if you do not want to support GoogleMaps on iOS
+    pod 'Mixpanel'
+    pod 'GoogleMaps'
     pod 'react-native-maps', path: '../node_modules/react-native-maps/'
     pod 'react-native-google-maps', path: '../node_modules/react-native-maps/'  # <~~ if you need GoogleMaps support on iOS
     
@@ -34,16 +34,9 @@ target 'PocReact' do
     pod 'Firebase/Core'
     
     # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
-#    pod 'Firebase/AdMob'
     pod 'Firebase/Auth'
-#    pod 'Firebase/Crash'
     pod 'Firebase/Database'
-#    pod 'Firebase/DynamicLinks'
-#    pod 'Firebase/Performance'
-#    pod 'Firebase/Firestore'
     pod 'Firebase/Messaging'
-#    pod 'Firebase/RemoteConfig'
-#    pod 'Firebase/Storage'
 
 end
 

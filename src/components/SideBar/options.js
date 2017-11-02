@@ -89,6 +89,11 @@ export default {
       name: 'WebView',
       route: 'webview',
       icon: 'ios-link'
+    },
+    {
+      name: 'Phone & Mail',
+      route: 'phonemail',
+      icon: 'call'
     }
   ]
 };
