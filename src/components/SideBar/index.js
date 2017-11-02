@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import ImagePicker from 'react-native-image-picker';
 import { Content, Text, ListItem, Left, View } from 'native-base';
 
-import * as authActions from '~/store/actions/auth';
-import * as commonActions from '~/store/actions/common';
-import { getRouter } from '~/store/selectors/common';
-import images from '~/assets/images';
-import Icon from '~/elements/Icon';
+import * as authActions from '../../store/actions/auth';
+import * as commonActions from '../../store/actions/common';
+import { getRouter } from '../../store/selectors/common';
+import images from '../../assets/images';
+import Icon from '../../elements/Icon';
 
 import options from './options';
 import styles from './styles';

@@ -1,8 +1,8 @@
 import { takeLatest, all, put } from 'redux-saga/effects';
-import { APP_LOGIN, APP_LOGOUT } from '~/constants/types';
-import auth from '~/store/api/auth';
-import { setToast, resetTo, closeDrawer } from '~/store/actions/common';
-import { setAuthState, saveLoggedUser, removeLoggedUser } from '~/store/actions/auth';
+import { APP_LOGIN, APP_LOGOUT } from '../../constants/types';
+import auth from '../api/auth';
+import { setToast, resetTo, closeDrawer } from '../actions/common';
+import { setAuthState, saveLoggedUser, removeLoggedUser } from '../actions/auth';
 import { createRequestSaga } from './common';
 
 const requestLogin = createRequestSaga({

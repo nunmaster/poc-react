@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Button, Footer, FooterTab } from 'native-base';
-import Icon from '~/elements/Icon';
+import Icon from '../../elements/Icon';
 import styles from './styles';
 import options from './options';
 

@@ -1,20 +1,20 @@
-import {Dimensions} from 'react-native';
+import { Dimensions } from 'react-native';
 export default {
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: 'space-between',    
-    backgroundColor: "#F5FCFF",
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#F5FCFF',
     padding: 50
   },
   image: {
     margin: 30,
-    width: Dimensions.get("window").width - 100,
-    height: 365 * (Dimensions.get("window").width - 100) / 651,
+    width: Dimensions.get('window').width - 100,
+    height: 365 * (Dimensions.get('window').width - 100) / 651,
   },
   messages: {
     marginTop: 30,
-    textAlign: "center",
+    textAlign: 'center',
   },
   restartToggleButton: {
     fontSize: 17
@@ -24,7 +24,7 @@ export default {
   },
   welcome: {
     fontSize: 20,
-    textAlign: "center",
+    textAlign: 'center',
     margin: 20
   },
-}
+};

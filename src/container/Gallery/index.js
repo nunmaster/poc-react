@@ -2,9 +2,9 @@ import React from 'react';
 import { FlatList } from 'react-native';
 import { Container } from 'native-base';
 import Image from 'react-native-fast-image';
-import material from '~/theme/variables/material';
+import material from '../../theme/variables/material';
 import { create } from 'apisauce';
-import configs from '~/constants/configs';
+import configs from '../../constants/configs';
 
 const THUMB_WIDTH = material.deviceWidth * 0.25;
 const api = create({

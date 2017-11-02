@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { View, TouchableOpacity, BackHandler } from 'react-native';
 import { Text, Button } from 'native-base';
 // for convenient, we can just import one
-import { clearToast } from '~/store/actions/common';
-import { getToast } from '~/store/selectors/common';
-import material from '~/theme/variables/material';
+import { clearToast } from '../../store/actions/common';
+import { getToast } from '../../store/selectors/common';
+import material from '../../theme/variables/material';
 
 @connect(state => ({ toast: getToast(state) }), { clearToast })
 export default class extends PureComponent {

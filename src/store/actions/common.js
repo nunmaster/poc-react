@@ -13,7 +13,7 @@ import {
   MODAL_OPEN,
   MODAL_CLOSE,
   INVOKE_CALLBACK
-} from '~/constants/types';
+} from '../../constants/types';
 
 /**
  * NAVIGATE

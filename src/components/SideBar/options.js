@@ -94,6 +94,26 @@ export default {
       name: 'Phone & Mail',
       route: 'phonemail',
       icon: 'call'
+    },
+    {
+      name: 'QRCode',
+      route: 'qrcode',
+      icon: 'call'
+    },
+    {
+      name: 'Call Web Service',
+      route: 'webservice',
+      icon: 'call'
+    },
+    {
+      name: 'Finger Print',
+      route: 'fingerprint',
+      icon: 'call'
+    },
+    {
+      name: 'Generate Code',
+      route: 'generate',
+      icon: 'call'
     }
   ]
 };

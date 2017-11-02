@@ -15,8 +15,8 @@ class Root extends React.Component {
     isLoading: true
   };
 
-  componentDidMount() {   
-    firebase.messaging().requestPermissions() 
+  componentDidMount() {
+    firebase.messaging().requestPermissions();
 
     firebase.messaging().onMessage((message) => console.log('message', message));
     // This gets logged only when the app is open
@@ -28,9 +28,9 @@ class Root extends React.Component {
         console.log('Notification which opened the app: ', notification);
       });
     // This is never called
-    
+
     configStore(store => {
-      if(!__DEV__){
+      if (!__DEV__) {
         const firstRoute = store.getState().auth.loggedIn ? authorizedRoute : initRoute;
         store.dispatch(resetTo(firstRoute));
       }

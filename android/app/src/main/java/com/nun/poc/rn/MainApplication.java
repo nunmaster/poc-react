@@ -3,6 +3,8 @@ package com.nun.poc.rn;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.horcrux.svg.SvgPackage;
+import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
 import cl.json.RNSharePackage;
 import com.react.rnspinkit.RNSpinkitPackage;
 import com.brentvatne.react.ReactVideoPackage;
@@ -46,6 +48,8 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
               new RNMixpanel(),
           new MainReactPackage(),
+            new SvgPackage(),
+            new ReactNativeFingerprintScannerPackage(),
             new RNSharePackage(),
             new RNSpinkitPackage(),
             new ReactVideoPackage(),

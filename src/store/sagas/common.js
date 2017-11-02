@@ -1,7 +1,7 @@
 import { call, put, take, race } from 'redux-saga/effects';
 import { delay } from 'redux-saga';
 
-import { API_TIMEOUT } from '~/constants/api';
+import { API_TIMEOUT } from '../../constants/api';
 import {
   markRequestPending,
   markRequestSuccess,

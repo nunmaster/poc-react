@@ -1,6 +1,6 @@
 import { takeLatest } from 'redux-saga/effects';
 
-import { replaceNotification } from '~/store/actions/notification';
+import { replaceNotification } from '../actions/notification';
 import { createRequestSaga } from './common';
 import { setToast } from '../actions/common';
 

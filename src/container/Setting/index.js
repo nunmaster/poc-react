@@ -1,15 +1,15 @@
-import React from "react";
-import CodePush from "react-native-code-push";
-import { Image } from "react-native";
-import { Container, View, Content, Button, Text } from "native-base";
+import React from 'react';
+import CodePush from 'react-native-code-push';
+import { Image } from 'react-native';
+import { Container, View, Content, Button, Text } from 'native-base';
 
-import {laptop_phone} from "~/assets/images";
+import { laptop_phone } from '../../assets/images';
 
-import styles from "./styles";
+import styles from './styles';
 
-@CodePush({ 
+@CodePush({
   installMode: CodePush.InstallMode.IMMEDIATE,
-  checkFrequency: CodePush.CheckFrequency.MANUAL 
+  checkFrequency: CodePush.CheckFrequency.MANUAL
 })
 export default class Setting extends React.Component {
 
@@ -21,35 +21,35 @@ export default class Setting extends React.Component {
   codePushStatusDidChange(syncStatus) {
     switch (syncStatus) {
       case CodePush.SyncStatus.CHECKING_FOR_UPDATE:
-        this.setState({ syncMessage: "Checking for update." });
+        this.setState({ syncMessage: 'Checking for update.' });
         break;
       case CodePush.SyncStatus.DOWNLOADING_PACKAGE:
-        this.setState({ syncMessage: "Downloading package." });
+        this.setState({ syncMessage: 'Downloading package.' });
         break;
       case CodePush.SyncStatus.AWAITING_USER_ACTION:
-        this.setState({ syncMessage: "Awaiting user action." });
+        this.setState({ syncMessage: 'Awaiting user action.' });
         break;
       case CodePush.SyncStatus.INSTALLING_UPDATE:
-        this.setState({ syncMessage: "Installing update." });
+        this.setState({ syncMessage: 'Installing update.' });
         break;
       case CodePush.SyncStatus.UP_TO_DATE:
-        this.setState({ syncMessage: "App up to date.", progress: false });
+        this.setState({ syncMessage: 'App up to date.', progress: false });
         break;
       case CodePush.SyncStatus.UPDATE_IGNORED:
         this.setState({
-          syncMessage: "Update cancelled by user.",
+          syncMessage: 'Update cancelled by user.',
           progress: false
         });
         break;
       case CodePush.SyncStatus.UPDATE_INSTALLED:
         this.setState({
-          syncMessage: "Update installed and will be applied on restart.",
+          syncMessage: 'Update installed and will be applied on restart.',
           progress: false
-        });      
+        });
         break;
       case CodePush.SyncStatus.UNKNOWN_ERROR:
         this.setState({
-          syncMessage: "An unknown error occurred.",
+          syncMessage: 'An unknown error occurred.',
           progress: false
         });
         break;
@@ -74,12 +74,12 @@ export default class Setting extends React.Component {
         this.setState({
           syncMessage: metadata
             ? JSON.stringify(metadata)
-            : "Running binary version",
+            : 'Running binary version',
           progress: false
         });
       },
       (error: any) => {
-        this.setState({ syncMessage: "Error: " + error, progress: false });
+        this.setState({ syncMessage: `Error: ${  error}`, progress: false });
       }
     );
   }
@@ -101,7 +101,7 @@ export default class Setting extends React.Component {
       this.codePushDownloadDidProgress.bind(this)
     );
 
-    
+
     // CodePush.notifyAppReady()
   }
 
@@ -111,7 +111,7 @@ export default class Setting extends React.Component {
     if (this.state.progress) {
       progressView = (
         <Text style={styles.messages}>
-          {this.state.progress.receivedBytes} of{" "}
+          {this.state.progress.receivedBytes} of{' '}
           {this.state.progress.totalBytes} bytes received
         </Text>
       );
@@ -134,18 +134,18 @@ export default class Setting extends React.Component {
         />
         <Button onPress={this.toggleAllowRestart.bind(this)}>
           <Text style={styles.restartToggleButton}>
-            Restart {this.state.restartAllowed ? "allowed" : "forbidden"}
+            Restart {this.state.restartAllowed ? 'allowed' : 'forbidden'}
           </Text>
         </Button>
         <Button onPress={this.getUpdateMetadata.bind(this)}>
           <Text style={styles.syncButton}>Press for Update Metadata</Text>
         </Button>
 
-        <Button onPress={()=>CodePush.notifyAppReady()}>
+        <Button onPress={() => CodePush.notifyAppReady()}>
           <Text>Notify ready</Text>
         </Button>
 
-        <Text style={styles.messages}>{this.state.syncMessage || ""}</Text>
+        <Text style={styles.messages}>{this.state.syncMessage || ''}</Text>
       </Container>
     );
   }

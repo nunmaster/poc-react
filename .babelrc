@@ -1,18 +1,23 @@
 {
-  "presets": ["react-native", "flow"],
+  "presets": [
+    "react-native",
+    "flow"
+  ],
   "plugins": [
     [
       "babel-plugin-root-import",
       {
         "rootPathPrefix": "~",
-        "rootPathSuffix": "src"
+        "rootPathSuffix": "source"
       }
     ],
     "babel-plugin-transform-decorators-legacy"
   ],
   "env": {
     "production": {
-      "plugins": ["transform-remove-console"]
+      "plugins": [
+        "transform-remove-console"
+      ]
     }
   }
 }

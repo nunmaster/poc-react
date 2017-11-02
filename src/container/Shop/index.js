@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
 import { Container, Text, Button } from 'native-base';
-import Icon from '~/elements/Icon';
+import Icon from '../../elements/Icon';
 import Product from './Product';
 import data from './mockData.json';
 

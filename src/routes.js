@@ -21,6 +21,10 @@ import Datepicker from './container/Datepicker';
 import Dropdown from './container/Dropdown';
 import WebView from './container/WebView';
 import PhoneMail from './container/PhoneMail';
+import QRCode from './container/QRCode';
+import CallWebService from './container/CallWebService';
+import Fingerprint from './container/Fingerprint';
+import GenerateCode from './container/GenerateCode';
 
 export default {
   home: {
@@ -169,6 +173,30 @@ export default {
   phonemail: {
     title: 'Phone & Mail',
     Page: PhoneMail,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  qrcode: {
+    title: 'Scan Code',
+    Page: QRCode,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  generate: {
+    title: 'Generate Code',
+    Page: GenerateCode,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  webservice: {
+    title: 'Call Web Service',
+    Page: CallWebService,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  fingerprint: {
+    title: 'Finger Print',
+    Page: Fingerprint,
     headerType: 'back',
     footerType: 'none'
   }
