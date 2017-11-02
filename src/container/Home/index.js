@@ -22,14 +22,14 @@ class Home extends React.PureComponent {
     Mixpanel.sharedInstanceWithToken('6fa5fac674280b9c3369328c7551d0a3');
     Mixpanel.track('App Loaded');
 
-    // navigator.geolocation.getCurrentPosition(
-    //   (position) => {
-    //     console.log('Position', position)              
-    //   },
-    //   (error) => {
-    //   },
-    //   { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 }
-    // )
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        console.log('Position', position)              
+      },
+      (error) => {
+      },
+      { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 }
+    )
   }
 
   render() {
@@ -39,7 +39,7 @@ class Home extends React.PureComponent {
           <MapView
             style={{
               width: null,
-              height: 500,
+              height: 300,
               flex: 1
             }}
             provider={PROVIDER_GOOGLE}
