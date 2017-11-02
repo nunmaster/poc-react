@@ -1,14 +1,13 @@
 
-const React = require('react');
-const ReactNative = require('react-native');
-const {
+import React from 'react';
+import {
   StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
   View,
   WebView
-} = ReactNative;
+} from 'react-native';
 
 const HEADER = '#3b5998';
 const BGWASH = 'rgba(255,255,255,0.8)';
