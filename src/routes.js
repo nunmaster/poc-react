@@ -25,6 +25,7 @@ import QRCode from './container/QRCode';
 import CallWebService from './container/CallWebService';
 import Fingerprint from './container/Fingerprint';
 import GenerateCode from './container/GenerateCode';
+import CountDown from './container/CountDown';
 
 export default {
   home: {
@@ -197,6 +198,12 @@ export default {
   fingerprint: {
     title: 'Finger Print',
     Page: Fingerprint,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  countdown: {
+    title: 'Count Down',
+    Page: CountDown,
     headerType: 'back',
     footerType: 'none'
   }
