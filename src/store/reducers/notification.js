@@ -1,4 +1,4 @@
-import { NOTIFICATION_RECEIVED, NOTIFICATION_REPLACE, NOTIFICATION_THROW } from '~/constants/types';
+import { NOTIFICATION_RECEIVED, NOTIFICATION_REPLACE, NOTIFICATION_THROW } from '../../constants/types';
 
 const init = {
   hasMore: true,

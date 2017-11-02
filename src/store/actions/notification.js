@@ -3,7 +3,7 @@ import {
   NOTIFICATION_RECEIVED,
   NOTIFICATION_REPLACE,
   NOTIFICATION_THROW
-} from '~/constants/types';
+} from '../../constants/types';
 
 export const getNotification = (...args) => ({
   type: NOTIFICATION_GET,

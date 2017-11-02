@@ -15,9 +15,9 @@ export default class extends React.Component {
     // firebase things?
   }
 
-  authenticate = async () =>{    
+  authenticate = async () => {
     const user = await firebase.auth().signInWithEmailAndPassword(
-      "a@a.com","123456");
+      'a@a.com', '123456');
 
     console.log(user);
   }
@@ -25,7 +25,7 @@ export default class extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image source={require('~/assets/images/RNFirebase512x512.png')} style={[styles.logo]} />
+        <Image source={require('../../assets/images/RNFirebase512x512.png')} style={[styles.logo]} />
         <Text style={styles.welcome}>
           Welcome to the React Native{'\n'}Firebase starter project!
         </Text>
@@ -38,11 +38,11 @@ export default class extends React.Component {
             Cmd+D or shake for dev menu
           </Text>
         ) : (
-          <Text style={styles.instructions}>
-            Double tap R on your keyboard to reload,{'\n'}
-            Cmd+M or shake for dev menu
+            <Text style={styles.instructions}>
+              Double tap R on your keyboard to reload,{'\n'}
+              Cmd+M or shake for dev menu
           </Text>
-        )}
+          )}
         <View style={styles.modules}>
           <Text style={styles.modulesHeader}>The following Firebase modules are enabled:</Text>
           {firebase.admob.nativeModuleExists && <Text>Admob</Text>}
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   modules: {
-    margin: 20,    
+    margin: 20,
     alignItems: 'center',
   },
   modulesHeader: {

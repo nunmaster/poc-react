@@ -1,4 +1,4 @@
-import { initRoute } from '~/constants/routes';
+import { initRoute } from '../../constants/routes';
 import {
   NAV_RESET,
   NAV_PUSH,
@@ -15,7 +15,7 @@ import {
   MODAL_CLOSE,
   DRAWER_OPEN,
   DRAWER_CLOSE
-} from '~/constants/types';
+} from '../../constants/types';
 
 /**
  * DRAWER
@@ -103,12 +103,12 @@ export const router = (state = initRouteState, { type, payload }) => {
       return isMatchCurrentRoute
         ? state
         : {
-            current: payload,
-            stack: [
-              state.current,
-              ...(state.stack.length > 4 ? state.stack.splice(0, -1) : state.stack)
-            ]
-          };
+          current: payload,
+          stack: [
+            state.current,
+            ...(state.stack.length > 4 ? state.stack.splice(0, -1) : state.stack)
+          ]
+        };
     }
     case NAV_POP:
       return { current: state.stack[0] || initRoute, stack: state.stack.splice(1) };

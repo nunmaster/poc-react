@@ -13,36 +13,36 @@ PODS:
     - React
   - CodePush/SSZipArchive (5.1.3):
     - React
-  - Firebase/Auth (4.4.0):
+  - Firebase/Auth (4.5.0):
     - Firebase/Core
-    - FirebaseAuth (= 4.3.0)
-  - Firebase/Core (4.4.0):
+    - FirebaseAuth (= 4.3.1)
+  - Firebase/Core (4.5.0):
     - FirebaseAnalytics (= 4.0.4)
-    - FirebaseCore (= 4.0.9)
-  - Firebase/Database (4.4.0):
+    - FirebaseCore (= 4.0.10)
+  - Firebase/Database (4.5.0):
     - Firebase/Core
-    - FirebaseDatabase (= 4.1.1)
-  - Firebase/Messaging (4.4.0):
+    - FirebaseDatabase (= 4.1.0)
+  - Firebase/Messaging (4.5.0):
     - Firebase/Core
-    - FirebaseMessaging (= 2.0.5)
+    - FirebaseMessaging (= 2.0.6)
   - FirebaseAnalytics (4.0.4):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseAuth (4.3.0):
+  - FirebaseAuth (4.3.1):
     - FirebaseAnalytics (~> 4.0)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (4.0.9):
+  - FirebaseCore (4.0.10):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseDatabase (4.1.1):
+  - FirebaseDatabase (4.1.0):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - leveldb-library (~> 1.18)
   - FirebaseInstanceID (2.0.5)
-  - FirebaseMessaging (2.0.5):
+  - FirebaseMessaging (2.0.6):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -66,7 +66,8 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
   - GTMSessionFetcher/Core (1.1.12)
-  - leveldb-library (1.18.3)
+  - leveldb-library (1.20)
+  - Mixpanel (3.2.3)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -75,11 +76,13 @@ PODS:
   - Protobuf (3.4.0)
   - React (0.49.0):
     - React/Core (= 0.49.0)
-  - react-native-google-maps (0.16.2):
+  - react-native-google-maps (0.17.1):
     - GoogleMaps (= 2.1.1)
     - React
-  - react-native-maps (0.16.2):
+  - react-native-maps (0.17.1):
     - React
+  - React/ART (0.49.0):
+    - React/Core
   - React/BatchedBridge (0.49.0):
     - React/Core
     - React/cxxreact_legacy
@@ -123,8 +126,10 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Messaging
   - GoogleMaps
+  - Mixpanel
   - react-native-google-maps (from `../node_modules/react-native-maps/`)
   - react-native-maps (from `../node_modules/react-native-maps/`)
+  - React/ART (from `../node_modules/react-native`)
   - React/BatchedBridge (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
   - React/RCTActionSheet (from `../node_modules/react-native`)
@@ -152,25 +157,26 @@ EXTERNAL SOURCES:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
-  CodePush: ffe876b57db57e0295653d69aa1653b0278b43ad
-  Firebase: 3e92884a63e8f76d107c43a67d2ab9071e1eda10
+  CodePush: ddb921f3ffba78095bb421b6b710b72f07f7378a
+  Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
-  FirebaseAuth: e0087d479709b20b9613b804704a928d6eafb052
-  FirebaseCore: ebe73f64302705e693b1de9919a76edbdd17a19d
-  FirebaseDatabase: 2e6e8e110b93b9a6e7aac71774c769a363035cb1
+  FirebaseAuth: e7c2b1359c2df4af23a568100a8eace0b8c507e4
+  FirebaseCore: da5e8e372cb6046212739a4d81e42d32c22907cc
+  FirebaseDatabase: 607284a103e961d7f5863ee603cab5e85f443bd6
   FirebaseInstanceID: f2b688c66b972f30d7fa9f5f9f91455454a03b47
-  FirebaseMessaging: e25dc87045e76dfe9e920a5741dc3fe7e3ef2268
+  FirebaseMessaging: 75d83375b0f7a9911568d7bdd1a1a8261cbcbdef
   GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
-  leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
+  leveldb-library: 9e29a1d913f922444127a7d0f28b025a0e2ba053
+  Mixpanel: 7bd8e176f088936bf6e283ade0d1f512f8e723bc
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
   React: 361d080313d690200036fed244f97f8264374d58
-  react-native-google-maps: e499a22f9a9c0c91a0eb1400d6ee48a7ac815f33
-  react-native-maps: da06bba7e02ade95c5604d97ae0cc4775900c65a
+  react-native-google-maps: 7aefab8f46ade38fa0931551501f839bbc9fc84f
+  react-native-maps: f3624337f9f5d36b117fa0acdaa32406a6687ee0
   yoga: e13aa29fefdcba797592f623d69d0cbe97eeb756
 
-PODFILE CHECKSUM: c3978ed8a97828b5ba41cf449827385d4be19076
+PODFILE CHECKSUM: 467340ee396ae768e5fea4498bcb951bccb6a4fe
 
 COCOAPODS: 1.3.1

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Header, Left, Right, Body, Text, Title, Button, Item, Input } from 'native-base';
 import { View, Keyboard } from 'react-native';
-import * as commonSelectors from '~/store/selectors/common';
-import * as commonActions from '~/store/actions/common';
-import * as notificationActions from '~/store/actions/notification';
-import Icon from '~/elements/Icon';
+import * as commonSelectors from '../../store/selectors/common';
+import * as commonActions from '../../store/actions/common';
+import * as notificationActions from '../../store/actions/notification';
+import Icon from '../../elements/Icon';
 import styles from './styles';
 
 @connect(

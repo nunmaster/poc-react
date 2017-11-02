@@ -6,7 +6,7 @@ import {
   APP_SAVE_REFRESH_TOKEN,
   APP_REMOVE_LOGGED_USER,
   APP_SAVE_SOCIAL_TYPE
-} from '~/constants/types';
+} from '../../constants/types';
 
 export const login = (...args) => ({ type: APP_LOGIN, args });
 export const logout = (...args) => ({ type: APP_LOGOUT, args });

@@ -1,9 +1,9 @@
 import { takeLatest, all } from 'redux-saga/effects';
-import account from '~/store/api/account';
-import { createRequestSaga } from '~/store/sagas/common';
-import { setToast } from '~/store/actions/common';
+import account from '../api/account';
+import { createRequestSaga } from './common';
+import { setToast } from '../actions/common';
 
-import { replaceProfile } from '~/store/actions/account';
+import { replaceProfile } from '../actions/account';
 
 const requestGetProfile = createRequestSaga({
   request: account.getProfile,
