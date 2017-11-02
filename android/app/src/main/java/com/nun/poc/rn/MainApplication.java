@@ -34,11 +34,11 @@ public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
 
-        @Override
-        protected String getJSBundleFile() {
-        return CodePush.getJSBundleFile();
-        }
-    
+    @Override
+    protected String getJSBundleFile() {
+      return CodePush.getJSBundleFile();
+    }
+
     @Override
     public boolean getUseDeveloperSupport() {
       return BuildConfig.DEBUG;
@@ -46,31 +46,16 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-              new RNMixpanel(),
-          new MainReactPackage(),
-<<<<<<< HEAD
-            new SvgPackage(),
-            new ReactNativeFingerprintScannerPackage(),
-=======
-            new BadgePackage(),
->>>>>>> 9b9eecc5371df32d82e0b8eb5abbb1e7b299c622
-            new RNSharePackage(),
-            new RNSpinkitPackage(),
-            new ReactVideoPackage(),
-            new RCTCameraPackage(),
-            new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey), getApplicationContext(), BuildConfig.DEBUG),
-            new RNFirebasePackage(),
-              new RNFirebaseAuthPackage(),
-              new RNFirebaseDatabasePackage(),
-              new RNFirebaseMessagingPackage(),
+      return Arrays.<ReactPackage>asList(new RNMixpanel(), new MainReactPackage(), new SvgPackage(),
+          new ReactNativeFingerprintScannerPackage(), new BadgePackage(), new RNSharePackage(), new RNSpinkitPackage(),
+          new ReactVideoPackage(), new RCTCameraPackage(),
+          new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey),
+              getApplicationContext(), BuildConfig.DEBUG),
+          new RNFirebasePackage(), new RNFirebaseAuthPackage(), new RNFirebaseDatabasePackage(),
+          new RNFirebaseMessagingPackage(),
 
-          new VectorIconsPackage(),
-          new MapsPackage(),
-          new ImagePickerPackage(),
-          new FastImageViewPackage(),
-          new ContactsWrapperPackage()
-      );
+          new VectorIconsPackage(), new MapsPackage(), new ImagePickerPackage(), new FastImageViewPackage(),
+          new ContactsWrapperPackage());
     }
 
     @Override
