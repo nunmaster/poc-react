@@ -78,6 +78,7 @@
 		EB1EE954340F40489FDF8864 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73C29486A23943E29173CB7A /* Feather.ttf */; };
 		EC0DD80013F04278B01ADA9F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB78B1DE3F14DD4B43447BC /* Octicons.ttf */; };
 		ED142FAFEA5E4DF4AC535B09 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2509427658DC45AFA721ADEF /* Foundation.ttf */; };
+		EF4B04D01FAB85AF001E0F49 /* OutputVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4B04CF1FAB85AF001E0F49 /* OutputVolume.m */; };
 		F287F5FEBE2D41EB90DB3B84 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE6EF5A01A764823ACD6BE9B /* MaterialCommunityIcons.ttf */; };
 		FA3C8A994A849347479CF52C /* libPods-PocReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25912925FB6A89C774BD569B /* libPods-PocReact.a */; };
 /* End PBXBuildFile section */
@@ -631,6 +632,8 @@
 		E82241B95E984A90ADC64604 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		EDFF1F7FADD74343AC03E2B0 /* RNMixpanel.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNMixpanel.xcodeproj; path = "../node_modules/react-native-mixpanel/RNMixpanel.xcodeproj"; sourceTree = "<group>"; };
 		EF4B037C1FAA4D4D001E0F49 /* PocReact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PocReact.entitlements; path = PocReact/PocReact.entitlements; sourceTree = "<group>"; };
+		EF4B04CE1FAB85AF001E0F49 /* OutputVolume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutputVolume.h; sourceTree = "<group>"; };
+		EF4B04CF1FAB85AF001E0F49 /* OutputVolume.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutputVolume.m; sourceTree = "<group>"; };
 		F35BCA6C1FE84751BA28D418 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		F747E8900EB641B99645B4FF /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		F81E6E4F92E142B6AB192CC2 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
@@ -800,6 +803,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				EF4B04CE1FAB85AF001E0F49 /* OutputVolume.h */,
+				EF4B04CF1FAB85AF001E0F49 /* OutputVolume.m */,
 			);
 			name = PocReact;
 			sourceTree = "<group>";
@@ -2021,6 +2026,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				EF4B04D01FAB85AF001E0F49 /* OutputVolume.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

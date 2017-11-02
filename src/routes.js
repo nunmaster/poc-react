@@ -29,6 +29,7 @@ import CountDown from './container/CountDown';
 import Zoom from './container/Zoom';
 import Carousel from './container/Carousel';
 import Animation from './container/Animation';
+import NativeModule from './container/NativeModule';
 
 export default {
   home: {
@@ -225,6 +226,12 @@ export default {
   animation: {
     title: 'Animation',
     Page: Animation,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  nativemodule: {
+    title: 'NativeModule',
+    Page: NativeModule,
     headerType: 'back',
     footerType: 'none'
   }

@@ -134,6 +134,11 @@ export default {
       name: 'Animation',
       route: 'animation',
       icon: 'call'
+    },
+    {
+      name: 'NativeModule',
+      route: 'nativemodule',
+      icon: 'call'
     }
   ]
 };
