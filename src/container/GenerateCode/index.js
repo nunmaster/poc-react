@@ -13,8 +13,11 @@ export default class GenerateCode extends Component {
       <View>
 
         <Barcode value="Hello World" format="CODE128" />
+        <Barcode value="ABCBCCBC" format="CODE39" />
+        <Barcode value="123123" format="ITF" />
+        
         <QRCode
-          value="http://awesome.link.qr"
+          value="Hello World"
         />
       </View>
 
