@@ -3,6 +3,8 @@ package com.nun.poc.rn;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.reactnative.photoview.PhotoViewPackage;
 import com.horcrux.svg.SvgPackage;
 import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
 import me.jhen.react.BadgePackage;
@@ -46,7 +48,9 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(new RNMixpanel(), new MainReactPackage(), new SvgPackage(),
+      return Arrays.<ReactPackage>asList(new RNMixpanel(), new MainReactPackage(),
+            new LinearGradientPackage(),
+            new PhotoViewPackage(), new SvgPackage(),
           new ReactNativeFingerprintScannerPackage(), new BadgePackage(), new RNSharePackage(), new RNSpinkitPackage(),
           new ReactVideoPackage(), new RCTCameraPackage(),
           new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey),

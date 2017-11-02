@@ -26,6 +26,9 @@ import CallWebService from './container/CallWebService';
 import Fingerprint from './container/Fingerprint';
 import GenerateCode from './container/GenerateCode';
 import CountDown from './container/CountDown';
+import Zoom from './container/Zoom';
+import Carousel from './container/Carousel';
+import Animation from './container/Animation';
 
 export default {
   home: {
@@ -204,6 +207,24 @@ export default {
   countdown: {
     title: 'Count Down',
     Page: CountDown,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  zoom: {
+    title: 'Zoom In/Out',
+    Page: Zoom,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  carousel: {
+    title: 'Carousel',
+    Page: Carousel,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  animation: {
+    title: 'Animation',
+    Page: Animation,
     headerType: 'back',
     footerType: 'none'
   }

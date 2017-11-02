@@ -119,6 +119,21 @@ export default {
       name: 'Generate Code',
       route: 'generate',
       icon: 'call'
+    },
+    {
+      name: 'Zoom In/Out',
+      route: 'zoom',
+      icon: 'call'
+    },
+    {
+      name: 'Carousel',
+      route: 'carousel',
+      icon: 'call'
+    },
+    {
+      name: 'Animation',
+      route: 'animation',
+      icon: 'call'
     }
   ]
 };
