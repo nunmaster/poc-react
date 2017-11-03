@@ -7,7 +7,8 @@ import * as authActions from '../../store/actions/auth';
 import * as authSelectors from '../../store/selectors/auth';
 import Mixpanel from 'react-native-mixpanel';
 import Permissions from 'react-native-permissions';
-
+import { Platform, Text, Linking } from 'react-native';
+  
 
 @connect(
   state => ({
@@ -19,9 +20,23 @@ import Permissions from 'react-native-permissions';
   }
 )
 class Home extends React.PureComponent {
+
+  componentDidMount() {
+    if (Platform.OS === 'android') {
+      Linking.getInitialURL().then(url => {
+        this.handleOpenURL;
+      });
+    } else {
+      Linking.addEventListener('url', this.handleOpenURL);
+    }
+  }
+
+
   componentWillMount() {
     Mixpanel.sharedInstanceWithToken('6fa5fac674280b9c3369328c7551d0a3');
     Mixpanel.track('App Loaded');
+
+    Linking.removeEventListener('url', this.handleOpenURL);
 
     Permissions.check('location')
       .then(response => {
@@ -40,6 +55,11 @@ class Home extends React.PureComponent {
       { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 }
     );
   }
+
+  handleOpenURL = (event) => {
+    alert("open from deep link")
+  }
+
 
   render() {
     return (
