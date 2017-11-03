@@ -149,6 +149,16 @@ export default {
       name: 'Speaker',
       route: 'speaker',
       icon: 'ios-chatbubbles'
+    },
+    {
+      name: 'Language Switcher',
+      route: 'language',
+      icon: 'ios-chatbubbles'
+    },
+    {
+      name: 'Browser',
+      route: 'browser',
+      icon: 'ios-link'
     }
   ]
 };
