@@ -5,7 +5,7 @@ import { Container, Content } from 'native-base';
 import * as commonActions from '../../store/actions/common';
 import * as authActions from '../../store/actions/auth';
 import * as authSelectors from '../../store/selectors/auth';
-import { Mixpanel } from 'react-native-mixpanel';
+// import { Mixpanel } from 'react-native-mixpanel';
 
 @connect(
   state => ({
@@ -18,9 +18,9 @@ import { Mixpanel } from 'react-native-mixpanel';
 )
 class Home extends React.PureComponent {
   componentWillMount() {
-    const Mixpanel = require('react-native-mixpanel');
-    Mixpanel.sharedInstanceWithToken('6fa5fac674280b9c3369328c7551d0a3');
-    Mixpanel.track('App Loaded');
+    // const Mixpanel = require('react-native-mixpanel');
+    // Mixpanel.sharedInstanceWithToken('6fa5fac674280b9c3369328c7551d0a3');
+    // Mixpanel.track('App Loaded');
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
