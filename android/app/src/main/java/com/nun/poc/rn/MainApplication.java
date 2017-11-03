@@ -3,6 +3,7 @@ package com.nun.poc.rn;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 import com.zmxv.RNSound.RNSoundPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.reactnative.photoview.PhotoViewPackage;
@@ -50,6 +51,7 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(new RNMixpanel(), new MainReactPackage(),
+            new RNI18nPackage(),
             new RNSoundPackage(),
             new LinearGradientPackage(),
             new PhotoViewPackage(), new SvgPackage(),
