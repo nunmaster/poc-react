@@ -33,6 +33,7 @@ import NativeModule from './container/NativeModule';
 import Keyboard from './container/Keyboard';
 import Speaker from './container/Speaker';
 import Language from './container/Language';
+import Browser from './container/Browser';
 
 export default {
   home: {
@@ -47,6 +48,12 @@ export default {
     headerType: 'back',
     footerType: 'none',
     cache: true
+  },
+  browser: {
+    title: 'Web Browser',
+    Page: Browser,
+    headerType: 'back',
+    footerType: 'none'
   },
   image: {
     title: 'Image',
