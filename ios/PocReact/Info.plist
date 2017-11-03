@@ -25,7 +25,7 @@
 	<key>CodePushDeploymentKey</key>
 	<string>aTwXERjimvj7H9mWOkyPh3haM67ed32b99bf-2c2a-48b9-a91b-0815995b50cd</string>
 	<key>LSApplicationCategoryType</key>
-	<string></string>
+	<string/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -41,6 +41,8 @@
 	<string>Poc React need access your location</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Poc React need access your photo library</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Poc React need access your microphone to record your speech and convert it to text.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>icomoon.ttf</string>

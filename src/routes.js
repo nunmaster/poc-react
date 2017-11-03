@@ -34,6 +34,7 @@ import Keyboard from './container/Keyboard';
 import Speaker from './container/Speaker';
 import Language from './container/Language';
 import Browser from './container/Browser';
+import Microphone from './container/Microphone';
 
 export default {
   home: {
@@ -260,6 +261,12 @@ export default {
   language: {
     title: 'Language Switcher',
     Page: Language,
+    headerType: 'back',
+    footerType: 'none'
+  },
+  microphone: {
+    title: 'Microphone',
+    Page: Microphone,
     headerType: 'back',
     footerType: 'none'
   }

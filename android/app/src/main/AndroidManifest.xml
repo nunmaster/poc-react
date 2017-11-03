@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <!-- REMOVE permissions -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" />

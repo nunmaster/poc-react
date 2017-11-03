@@ -159,6 +159,11 @@ export default {
       name: 'Browser',
       route: 'browser',
       icon: 'ios-link'
+    },
+    {
+      name: 'Microphone',
+      route: 'microphone',
+      icon: 'ios-link'
     }
   ]
 };

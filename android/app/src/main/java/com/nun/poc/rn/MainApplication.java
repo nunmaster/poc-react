@@ -8,6 +8,7 @@ import com.airbnb.android.react.maps.MapsPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import com.dylanvann.fastimage.FastImageViewPackage;
 import com.facebook.react.ReactApplication;
+import com.rnim.rn.audio.ReactNativeAudioPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -51,6 +52,7 @@ public class MainApplication extends Application implements ReactApplication {
         @Override
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(new RNMixpanel(), new MainReactPackage(),
+            new ReactNativeAudioPackage(),
                     new RNI18nPackage(),
                     new RNSoundPackage(),
                     new LinearGradientPackage(),
