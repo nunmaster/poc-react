@@ -53,37 +53,37 @@ export default {
     {
       name: 'ScrollBar',
       route: 'scrollbar',
-      icon: 'ios-camera'
+      icon: 'arrow-down'
     },
     {
       name: 'Shadow',
       route: 'shadow',
-      icon: 'ios-camera'
+      icon: 'albums'
     },
     {
       name: 'Switch',
       route: 'switch',
-      icon: 'ios-camera'
+      icon: 'switch'
     },
     {
       name: 'Copy',
       route: 'copy',
-      icon: 'ios-camera'
+      icon: 'copy'
     },
     {
       name: 'Loading',
       route: 'loading',
-      icon: 'ios-camera'
+      icon: 'code-working'
     },
     {
       name: 'Share',
       route: 'share',
-      icon: 'ios-camera'
+      icon: 'share'
     },
     {
       name: 'Datepicker',
       route: 'datepicker',
-      icon: 'ios-timer'
+      icon: 'calendar'
     },
     {
       name: 'Dropdown',
@@ -93,7 +93,7 @@ export default {
     {
       name: 'WebView',
       route: 'webview',
-      icon: 'ios-link'
+      icon: 'globe'
     },
     {
       name: 'Phone & Mail',
@@ -103,37 +103,37 @@ export default {
     {
       name: 'QRCode',
       route: 'qrcode',
-      icon: 'call'
+      icon: 'qr-scanner'
     },
     {
       name: 'Call Web Service',
       route: 'webservice',
-      icon: 'call'
+      icon: 'cloud-circle'
     },
     {
       name: 'Finger Print',
       route: 'fingerprint',
-      icon: 'call'
+      icon: 'lock'
     },
     {
       name: 'Generate Code',
       route: 'generate',
-      icon: 'call'
+      icon: 'barcode'
     },
     {
       name: 'Zoom In/Out',
       route: 'zoom',
-      icon: 'call'
+      icon: 'add-circle'
     },
     {
       name: 'Carousel',
       route: 'carousel',
-      icon: 'call'
+      icon: 'card'
     },
     {
       name: 'Animation',
       route: 'animation',
-      icon: 'call'
+      icon: 'analytics'
     },
     {
       name: 'NativeModule',
@@ -143,27 +143,27 @@ export default {
     {
       name: 'Keyboard',
       route: 'keyboard',
-      icon: 'ios-paper'
+      icon: 'keypad'
     },
     {
       name: 'Speaker',
       route: 'speaker',
-      icon: 'ios-chatbubbles'
+      icon: 'volume-down'
     },
     {
       name: 'Language Switcher',
       route: 'language',
-      icon: 'ios-chatbubbles'
+      icon: 'md-globe'
     },
     {
       name: 'Browser',
       route: 'browser',
-      icon: 'ios-link'
+      icon: 'ios-globe-outline'
     },
     {
       name: 'Microphone',
       route: 'microphone',
-      icon: 'ios-link'
+      icon: 'mic'
     }
   ]
 };
