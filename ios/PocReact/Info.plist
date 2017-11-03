@@ -25,7 +25,7 @@
 	<key>CodePushDeploymentKey</key>
 	<string>aTwXERjimvj7H9mWOkyPh3haM67ed32b99bf-2c2a-48b9-a91b-0815995b50cd</string>
 	<key>LSApplicationCategoryType</key>
-	<string/>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -77,5 +77,14 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>pocreact</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

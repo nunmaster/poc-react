@@ -14,6 +14,7 @@
 #import <React/RCTRootView.h>
 #import <Firebase.h>
 #import "RNFirebaseMessaging.h"
+#import <React/RCTLinkingManager.h>
 
 @import GoogleMaps;
 
@@ -71,6 +72,13 @@ fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHand
 didReceiveNotificationResponse:(UNNotificationResponse *)response
          withCompletionHandler:(void (^)())completionHandler {
   [RNFirebaseMessaging didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+  return [RCTLinkingManager application:application openURL:url options:options];
 }
 
 @end
