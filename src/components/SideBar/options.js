@@ -6,11 +6,6 @@ export default {
       icon: 'ios-home'
     },
     {
-      name: 'My Profile',
-      route: 'userProfileUpdate',
-      icon: 'ios-contact'
-    },
-    {
       name: 'Gallery',
       route: 'gallery',
       icon: 'ios-images'
@@ -26,19 +21,14 @@ export default {
       icon: 'ios-image'
     },
     {
-      name: 'Whatsapp',
-      route: 'whatsapp',
+      name: 'TabBar',
+      route: 'tabbar',
       icon: 'ios-chatbubbles'
     },
     {
       name: 'Settings',
       route: 'setting',
       icon: 'ios-construct'
-    },
-    {
-      name: 'History',
-      route: 'fanHistory',
-      icon: 'ios-paper'
     },
     {
       name: 'Camera',

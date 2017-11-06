@@ -15,15 +15,15 @@ export default class extends Component {
             </Item>
             <Item floatingLabel last>
               <Label>Email</Label>
-              <Input keyboardType={'email-address'} secureTextEntry={true}/>
+              <Input keyboardType={'email-address'} secureTextEntry={false}/>
             </Item>
             <Item floatingLabel last>
               <Label>Number</Label>
-              <Input keyboardType={'numeric'} secureTextEntry={true}/>
+              <Input keyboardType={'numeric'} secureTextEntry={false}/>
             </Item>
             <Item floatingLabel last>
               <Label>Phone</Label>
-              <Input keyboardType={'phone-pad'} secureTextEntry={true}/>
+              <Input keyboardType={'phone-pad'} secureTextEntry={false}/>
             </Item>
           </Form>
         </Content>

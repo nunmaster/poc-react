@@ -1,2 +1,2 @@
-export const initRoute = 'login';
-export const authorizedRoute = 'home';
+export const initRoute = 'home';
+

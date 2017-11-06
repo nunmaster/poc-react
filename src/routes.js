@@ -63,9 +63,9 @@ export default {
     footerType: 'none',
     cache: true
   },
-  whatsapp: {
-    title: 'Whatsapp',
-    Page: Whatsapp,
+  tabbar: {
+    title: 'TabBar',
+    Page: TabBar,
     headerType: 'back',
     footerType: 'none',
     cache: true
