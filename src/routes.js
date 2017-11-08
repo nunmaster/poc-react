@@ -5,7 +5,7 @@ import Gallery from './container/Gallery';
 import Image from './container/Image';
 import Setting from './container/Setting';
 import UserProfile from './container/UserProfile';
-import Whatsapp from './container/Whatsapp';
+import TabBar from './container/Whatsapp';
 import Shop from './container/Shop';
 import Firebase from './container/Firebase';
 import Karaoke from './container/Karaoke';

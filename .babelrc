@@ -8,7 +8,7 @@
       "babel-plugin-root-import",
       {
         "rootPathPrefix": "~",
-        "rootPathSuffix": "source"
+        "rootPathSuffix": "src"
       }
     ],
     "babel-plugin-transform-decorators-legacy"

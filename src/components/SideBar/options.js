@@ -16,7 +16,7 @@ export default {
       icon: 'ios-timer'
     },
     {
-      name: 'Image',
+      name: 'Images',
       route: 'image',
       icon: 'ios-image'
     },
@@ -99,11 +99,6 @@ export default {
       name: 'Call Web Service',
       route: 'webservice',
       icon: 'cloud-circle'
-    },
-    {
-      name: 'Finger Print',
-      route: 'fingerprint',
-      icon: 'lock'
     },
     {
       name: 'Generate Code',
